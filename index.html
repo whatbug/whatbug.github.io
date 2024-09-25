@@ -86,7 +86,7 @@
 </head>
 
 <div class="plan_box" width="100%">
-    <table>
+    <table style="width: 100%;">
         <thead>
             <td class="head" style="width: 50%;">地址</td>
             <td class="head" style="width: 50%;">地区</td>
@@ -143,10 +143,17 @@ sudo tee /etc/docker/daemon.json &lt;&lt;-EOF
 EOF
 sudo systemctl daemon-reload &amp;&amp; sudo systemctl restart docker
 </pre>
-   
+</div>
+
 [Windows]
+ <div class="terminal">
+        <div class="terminal-header">
+            <div class="circle"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
 <pre>
-  {
+{
   "builder": {
     "gc": {
       "defaultKeepStorage": "50GB",
